@@ -1,3 +1,3 @@
-Portfoloi
+# Portfolio
 
 Magdalena Tsolaki

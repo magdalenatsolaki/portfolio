@@ -1,0 +1,21 @@
+
+cp "source" "dest"
+
+
+
+
+------------------------
+
+
+#!/bin/bash
+
+set -e
+trap 'echo "******* FAILED *******" 1>&2' ERR
+
+echo 'Command that succeeds'   # this command works
+ls non_existent_file           # this should fail
+echo 'Unreachable command'     # and this is never called
+                               # due to set -e
+
+
+------------------------
